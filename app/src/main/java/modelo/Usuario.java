@@ -3,11 +3,18 @@ package modelo;
 /**
  * Created by lucas-pc on 09/04/16.
  */
+
+// essa classe instancia todos os dados referentes ao usuario
 public class Usuario
 {
     private String nome;
     private double peso;
     private double altura;
+
+    public Usuario ()
+    {
+
+    }
 
     public Usuario(String nome,double peso,double altura)
     {

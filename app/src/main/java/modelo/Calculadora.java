@@ -2,6 +2,8 @@ package modelo;
 
 import com.example.lucas_pc.calculoimc.R;
 
+import java.text.DecimalFormat;
+
 /**
  * Created by lucas-pc on 09/04/16.
  */
@@ -13,9 +15,14 @@ public class Calculadora
     private Usuario pessoa; // obejeto do tipo Usuario que guardara os dados da pessoa
 
 
-    public Calculadora(double imc, Usuario pessoa)
+    public Calculadora()
     {
-        this.imc = imc;
+
+    }
+
+    public Calculadora(Usuario pessoa)
+    {
+
         this.pessoa = pessoa;
     }
 
@@ -44,29 +51,34 @@ public class Calculadora
     // metodo que realizara o calculo de imc
     public void calcularImc()
     {
-        this.imc = this.pessoa.getPeso()  / (this.pessoa.getAltura()*this.pessoa.getAltura());
+
+
+        this.imc =   this.pessoa.getPeso()  / (this.pessoa.getAltura()*this.pessoa.getAltura());
     }
 
     // metodo que retornara uma string referente ao resultado
     public String diagnostico()
     {
-        String resultado = "IMC = " + this.imc + " Kg/m2";
+        DecimalFormat valorFormatado = new DecimalFormat("#.##");
+
+
+        String resultado =  " IMC = " + valorFormatado.format(this.imc) + " Kg/m2. ";
 
         if(this.imc < 18.5)
         {
-            resultado += " .Voce esta abaixo do peso";
+            resultado += this.getPessoa().getNome() + " ,Voce esta abaixo do peso";
         }
         else if(this.imc >= 18.5 && this.imc < 25)
         {
-            resultado += " .Voce esta no peso normal";
+            resultado += this.getPessoa().getNome() + " ,Voce esta no peso normal";
         }
         else if(this.imc >= 25 && this.imc < 30)
         {
-            resultado += " .Voce esta acima do peso";
+            resultado += this.getPessoa().getNome() + " ,Voce esta acima do peso";
         }
         else
         {
-            resultado += " .Voce esta obeso!!Procure um medico";
+            resultado += this.getPessoa().getNome() + " ,Voce esta obeso!!Procure um medico";
         }
 
         return resultado;
