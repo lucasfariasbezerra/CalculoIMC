@@ -44,6 +44,20 @@
 
     </LinearLayout>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Minha Massa Corporea"
+        android:textSize="20sp"
+        android:id="@+id/buttonCalculo"
+        android:background="#66a3ff"
+        android:textColor="#ffffff"
+        android:layout_marginTop="250pt"
+        android:layout_marginLeft="12pt"
+        />
+
+
+
 
     <TextView
         android:layout_width="match_parent"
@@ -52,20 +66,9 @@
         android:id="@+id/tVURL"
         android:textSize="20sp"
         android:layout_marginLeft="12pt"
-        android:layout_marginTop="230pt"
+        android:layout_marginTop="290pt"
         android:textColor="#000099"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calcular Minha Massa Corporea"
-        android:textSize="20sp"
-        android:id="@+id/buttonCalculo"
-        android:background="#66a3ff"
-        android:textColor="#ff8c1a"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/linearLayout"
-        android:layout_alignStart="@+id/linearLayout" />
 
 
 </RelativeLayout>
