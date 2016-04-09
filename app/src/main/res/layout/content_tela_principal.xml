@@ -20,8 +20,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout"
-        android:layout_marginTop="12pt"
-        android:layout_marginLeft="10pt"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
         >
 
         <ImageView
@@ -37,8 +37,8 @@
             android:layout_height="wrap_content"
             android:text="Calculadora de IMC"
             android:id="@+id/tVDescricaoLogo"
-            android:textSize="25sp"
-            android:layout_marginLeft="1pt"
+            android:textSize="25dp"
+            android:layout_marginLeft="1dp"
             android:textColor="#ffffff"/>
 
 
@@ -52,8 +52,8 @@
         android:id="@+id/buttonCalculo"
         android:background="#66a3ff"
         android:textColor="#ffffff"
-        android:layout_marginTop="250pt"
-        android:layout_marginLeft="12pt"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="12dp"
         />
 
 
@@ -65,8 +65,8 @@
         android:text="O que é IMC "
         android:id="@+id/tVURL"
         android:textSize="20sp"
-        android:layout_marginLeft="12pt"
-        android:layout_marginTop="290pt"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="440dp"
         android:textColor="#000099"/>
 
 

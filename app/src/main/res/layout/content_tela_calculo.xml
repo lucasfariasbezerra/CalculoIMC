@@ -38,7 +38,21 @@
         android:layout_alignTop="@+id/editTextPeso"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="8dp"/>
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:ems="18"
+        android:id="@+id/editText"
+        android:layout_below="@+id/editTextPeso"
+        android:layout_alignLeft="@+id/editTextPeso"
+        android:layout_alignStart="@+id/editTextPeso" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,17 +61,19 @@
         android:id="@+id/BtnResultado"
         android:background="#66a3ff"
         android:textColor="#ffffff"
-        android:layout_marginTop="75pt"
-        android:layout_marginLeft="65pt"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="130dp"
         android:width="155dp"
         />
 
     <ImageView
         android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_height="230dp"
         android:id="@+id/iVREsultado"
         android:layout_marginLeft="75dp"
-        android:layout_marginTop="252dp"/>
+        android:layout_marginTop="252dp"
+        android:src="@drawable/obese"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -65,8 +81,10 @@
         android:text=""
         android:id="@+id/tVResultado"
         android:layout_marginTop="520dp"
-        android:layout_marginLeft="75dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="15sp"
          />
+
 
 
 </RelativeLayout>
