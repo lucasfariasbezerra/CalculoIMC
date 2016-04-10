@@ -47,6 +47,7 @@ public class TelaCalculo extends AppCompatActivity {
 
 
 
+
         // metodo que inplementa o evento click listener do botao calculo
         bCalculo.setOnClickListener(new View.OnClickListener() {
 
