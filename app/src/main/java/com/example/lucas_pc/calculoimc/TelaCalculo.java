@@ -41,7 +41,7 @@ public class TelaCalculo extends AppCompatActivity {
          eNome = (EditText) findViewById(R.id.editTextNome);
 
 
-
+        //botao calculo
         Button bCalculo = (Button) findViewById(R.id.BtnResultado);
 
 
