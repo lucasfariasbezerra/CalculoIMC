@@ -1,5 +1,7 @@
 package modelo;
 
+import java.io.IOException;
+
 /**
  * Created by lucas-pc on 09/04/16.
  */
@@ -28,15 +30,22 @@ public class Usuario
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String nome)
+    {
+
+
+            this.nome = nome;
+
+
+
     }
 
     public double getPeso() {
         return peso;
     }
 
-    public void setPeso(double peso) {
+    public void setPeso(double peso)
+    {
         this.peso = peso;
     }
 
@@ -44,7 +53,12 @@ public class Usuario
         return altura;
     }
 
-    public void setAltura(double altura) {
-        this.altura = altura;
+    public void setAltura(double altura)
+    {
+
+            this.altura = altura;
+
+
+
     }
 }
